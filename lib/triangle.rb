@@ -21,11 +21,11 @@ class Triangle
       end
     else 
       if self.a =+ self.b || self.b == self.c || self.c == self.a
-        kind = 'isosceles'
+        kind = :isosceles
       elsif self.a == self.b && self.a == self.c && self.b == self.c
-        kind = 'equilateral'
+        kind = :equilateral
       elsif self.a != self.b && self.a != self.c && self.b != self.c
-        kind = 'scalene'
+        kind = :scalene
       end
     end
     kind 
