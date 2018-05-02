@@ -17,7 +17,7 @@ class Triangle
   end
   
   def valid?
-    self.a + self.b > self.c && self.c + self.b > self.a && self.a + self.c > self.b && self.a > 0 && self.b > 0 && self.c > 0
+    a + b > c && c + b > self.a && self.a + self.c > self.b && self.a > 0 && self.b > 0 && self.c > 0
   end
   
   def kind
