@@ -3,12 +3,12 @@ class Triangle
   attr_accessor :a, :b, :c 
 
   def initialize(a, b, c)
-    if !valid?(a, b, c)
-      begin 
-        raise TriangleError
-      rescue TriangleError => error 
-        puts error.message
-      end
+    raise TriangleError if !valid?(a, b, c)
+      #begin 
+       # raise TriangleError
+      #rescue TriangleError => error 
+       # puts error.message
+      #end
     else 
       @a = a 
       @b = b 
