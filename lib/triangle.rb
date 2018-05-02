@@ -13,6 +13,7 @@ class Triangle
       @a = a 
       @b = b 
       @c = c 
+    end
   end
   
   def valid?
