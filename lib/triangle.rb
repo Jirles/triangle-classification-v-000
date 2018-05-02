@@ -20,12 +20,12 @@ class Triangle
         puts error.message
       end
     else 
-      if self.a =+ self.b || self.b == self.c || self.c == self.a
-        kind = :isosceles
-      elsif self.a == self.b && self.a == self.c && self.b == self.c
+      if self.a == self.b && self.a == self.c && self.b == self.c
         kind = :equilateral
       elsif self.a != self.b && self.a != self.c && self.b != self.c
         kind = :scalene
+      else 
+        kind = :isosceles
       end
     end
     kind 
