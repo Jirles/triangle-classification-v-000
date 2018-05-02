@@ -5,11 +5,6 @@ class Triangle
   def initialize(a, b, c)
     if !valid?(a, b, c)
       raise TriangleError 
-      #begin 
-       # raise TriangleError
-      #rescue TriangleError => error 
-       # puts error.message
-      #end
     else 
       @a = a 
       @b = b 
